@@ -1,8 +1,13 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import en from './en.json';
-import fr from './fr.json';
+import { parse } from 'smol-toml';
+
+import enToml from './en.toml?raw';
+import frToml from './fr.toml?raw';
+
+const en = parse(enToml);
+const fr = parse(frToml);
 
 i18n
   .use(LanguageDetector)
