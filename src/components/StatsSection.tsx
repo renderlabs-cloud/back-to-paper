@@ -1,13 +1,31 @@
 import { useTranslation } from 'react-i18next';
+import { useQuery } from '@tanstack/react-query';
+import { supabase } from '@/integrations/supabase/client';
 import SectionHeader from './SectionHeader';
 
 const StatsSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language?.startsWith('fr') ? 'fr' : 'en';
 
-  const items = t('stats.items', { returnObjects: true }) as Array<{
-    value: string;
-    label: string;
-  }>;
+  const { data: stats } = useQuery({
+    queryKey: ['stats'],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('stats')
+        .select('*')
+        .order('sort_order');
+      if (error) throw error;
+      return data;
+    },
+  });
+
+  // Fallback to i18n data while loading
+  const items = stats
+    ? stats.map((s) => ({
+        value: s.value,
+        label: lang === 'fr' ? s.label_fr : s.label_en,
+      }))
+    : (t('stats.items', { returnObjects: true }) as Array<{ value: string; label: string }>);
 
   return (
     <section id="evidence" className="py-24">
