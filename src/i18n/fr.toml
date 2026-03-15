@@ -1,0 +1,92 @@
+[nav]
+manifesto = "Manifeste"
+exploits = "Galerie d'Exploits"
+evidence = "Archives des Preuves"
+download = "Télécharger le Cadre"
+
+[hero]
+title_1 = "La confiance"
+title_2 = "N'est pas un script."
+description = "Chaque évaluation basée sur un navigateur est un bac à sable que l'étudiant possède déjà. Les verrouillages côté client sont de l'art performatif — ils simulent le contrôle tandis que le DOM reste un livre ouvert. Le seul support inviolable est celui qui précède le transistor."
+cta = "LIRE LE MANIFESTE"
+version = "Version 1.0.4 // Protocole d'Intégrité Physique"
+
+[exploits]
+title = "La Galerie d'Exploits"
+subtitle = 'Chaque évaluation "sécurisée" basée sur un navigateur a un défaut fatal : le client est l''ennemi.'
+
+[exploits.dom]
+title = "Manipulation du DOM"
+code = """
+document.querySelectorAll('.q-opt')
+  .forEach(el => {
+    el.style.border =
+      el.dataset.correct
+        ? '3px solid green'
+        : 'none';
+  });"""
+description = "La sécurité côté client est un oxymore. Si l'utilisateur possède la machine, il possède la vérité. Chaque réponse, chaque indicateur, chaque validation réside dans la mémoire que l'étudiant contrôle."
+
+[exploits.devtools]
+title = "Contournement des DevTools"
+code = """
+// DevTools "désactivés" ?
+// Ctrl+Shift+I bloqué ?
+chrome.exe
+  --remote-debugging-port=9222
+
+// Inspectez tout maintenant.
+// Le navigateur obéit à son
+// propriétaire, pas à votre script."""
+description = "Le blocage des raccourcis clavier est un rideau, pas un mur. Le débogage à distance, les extensions et les clients alternatifs rendent chaque verrouillage théâtral."
+
+[exploits.network]
+title = "Interception Réseau"
+code = """
+// mitmproxy ou Burp Suite
+$ mitmproxy --mode transparent
+
+// Intercepter, lire, modifier
+// chaque requête et réponse.
+// Les réponses en transit sont
+// des réponses à découvert."""
+description = "HTTPS entre client et serveur ne signifie rien quand l'étudiant contrôle le terminal. Les outils proxy transforment le trafic chiffré en texte clair en quelques secondes."
+
+[manifesto]
+title = "Le Manifeste"
+subtitle = "Une déclaration pour l'intégrité des évaluations à l'ère de l'automatisation."
+points = [
+  'L''écran est un menteur. Chaque pixel est modifiable, chaque script est contournable, chaque navigateur "sécurisé" est une suggestion.',
+  "94% des verrouillages de navigateur sont contournés en moins de 120 secondes. Ce n'est pas un bug — c'est l'architecture.",
+  "Les logiciels de surveillance observent la caméra de l'étudiant pendant que le deuxième appareil de l'étudiant consulte les réponses. La surveillance n'est pas la sécurité.",
+  "Le texte généré par l'IA est indiscernable d'un texte étudiant compétent. Le pipeline de soumission numérique est définitivement compromis.",
+  "L'écriture manuscrite ne peut pas être générée par un modèle de langage. Un trait de stylo porte des données biométriques qu'aucun algorithme ne peut fabriquer à grande échelle.",
+  "Les évaluations sur papier ne sont pas une régression. Elles sont le seul support où la main ne peut pas être automatisée et la réponse ne peut pas être transmise par procuration.",
+  "Nous ne prônons pas l'élimination de la technologie dans l'éducation. Nous prônons l'élimination de la fausse confiance dans l'intégrité numérique.",
+]
+
+[stats]
+title = "Les Chiffres"
+
+[stats.lockdown]
+label = "des verrouillages navigateur contournés en moins de 2 minutes"
+
+[stats.students]
+label = "des étudiants connaissent au moins une méthode de contournement"
+
+[stats.dom_extract]
+label = "pour extraire les réponses via l'inspection DOM sur les principales plateformes"
+
+[stats.zero_controls]
+label = "contrôles côté client qui résistent à un utilisateur déterminé"
+
+[download]
+title = "Cadre d'Évaluation Papier-First"
+subtitle = "Un guide pratique pour la transition vers une évaluation inviolable."
+cta = "S'ENGAGER POUR LE PAPIER"
+note = "PDF // 2.4Mo // CC BY-SA 4.0"
+
+[footer]
+line1 = "Back to Paper — Un projet de plaidoyer ouvert."
+line2 = "La source est le message. Pas de tracking. Pas de cookies. Pas de fingerprinting JavaScript."
+line3 = "backtopaper.org"
