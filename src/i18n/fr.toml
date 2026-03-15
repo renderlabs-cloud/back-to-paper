@@ -13,7 +13,7 @@ version = "Version 1.0.4 // Protocole d'Intégrité Physique"
 
 [exploits]
 title = "La Galerie d'Exploits"
-subtitle = 'Chaque évaluation "sécurisée" basée sur un navigateur a un défaut fatal : le client est l''ennemi.'
+subtitle = "Chaque évaluation \"sécurisée\" basée sur un navigateur a un défaut fatal : le client est l'ennemi."
 
 [exploits.dom]
 title = "Manipulation du DOM"
@@ -56,7 +56,7 @@ description = "HTTPS entre client et serveur ne signifie rien quand l'étudiant 
 title = "Le Manifeste"
 subtitle = "Une déclaration pour l'intégrité des évaluations à l'ère de l'automatisation."
 points = [
-  'L''écran est un menteur. Chaque pixel est modifiable, chaque script est contournable, chaque navigateur "sécurisé" est une suggestion.',
+  "L'écran est un menteur. Chaque pixel est modifiable, chaque script est contournable, chaque navigateur \"sécurisé\" est une suggestion.",
   "94% des verrouillages de navigateur sont contournés en moins de 120 secondes. Ce n'est pas un bug — c'est l'architecture.",
   "Les logiciels de surveillance observent la caméra de l'étudiant pendant que le deuxième appareil de l'étudiant consulte les réponses. La surveillance n'est pas la sécurité.",
   "Le texte généré par l'IA est indiscernable d'un texte étudiant compétent. Le pipeline de soumission numérique est définitivement compromis.",
