@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import LanguageToggle from './LanguageToggle';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ const Navbar = () => {
         <span className="font-mono text-sm uppercase tracking-widest font-bold">
           Back to Paper
         </span>
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           <a href="#manifesto" className="font-mono text-xs uppercase tracking-widest no-underline hover:text-primary">
             {t('nav.manifesto')}
           </a>
@@ -21,9 +22,11 @@ const Navbar = () => {
             {t('nav.evidence')}
           </a>
           <LanguageToggle />
+          <ThemeToggle />
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-3">
           <LanguageToggle />
+          <ThemeToggle />
         </div>
       </div>
     </nav>

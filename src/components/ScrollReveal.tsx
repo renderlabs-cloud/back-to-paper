@@ -45,7 +45,7 @@ const ScrollReveal = ({
         transform: isVisible ? 'translate(0)' : transforms[direction],
         // 🧠 We use `steps(8)` instead of `ease-out` to match the
         // brutalist "stamp" aesthetic from the design brief — snappy, not smooth.
-        transition: `opacity 0.5s steps(8) ${delay}ms, transform 0.5s steps(8) ${delay}ms`,
+        transition: `opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms`,
       }}
     >
       {children}
