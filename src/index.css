@@ -31,6 +31,31 @@
     --shadow-brutal-sm: 2px 2px 0px 0px hsl(0 0% 0%);
   }
 
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 40 30% 92%;
+    --card: 0 0% 11%;
+    --card-foreground: 40 30% 92%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 40 30% 92%;
+    --primary: 347 77% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 40 30% 92%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 0 0% 16%;
+    --accent-foreground: 40 30% 92%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 347 77% 55%;
+
+    --shadow-brutal: 4px 4px 0px 0px hsl(0 0% 100% / 0.2);
+    --shadow-brutal-sm: 2px 2px 0px 0px hsl(0 0% 100% / 0.2);
+  }
+
   * {
     @apply border-border;
   }
@@ -60,7 +85,7 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
-    transition: color 100ms steps(2);
+    transition: color 100ms ease;
   }
 
   a:hover {
