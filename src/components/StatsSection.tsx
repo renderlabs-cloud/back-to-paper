@@ -43,6 +43,9 @@ const StatsSection = () => {
             key={key}
             className={`p-8 ${i < STAT_KEYS.length - 1 ? 'border-b sm:border-b lg:border-b-0 sm:border-r lg:border-r border-foreground' : ''}`}
           >
+            <div className="font-mono text-5xl md:text-6xl font-bold text-primary mb-4 tracking-tighter">
+              {valueMap[key]}
+            </div>
             <p className="font-serif text-sm text-muted-foreground leading-relaxed">
               {t(`stats.${key}.label`, { value: valueMap[key] })}
             </p>
