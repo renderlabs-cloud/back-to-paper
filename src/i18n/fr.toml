@@ -69,16 +69,16 @@ points = [
 title = "Les Chiffres"
 
 [stats.lockdown]
-label = "des verrouillages navigateur contournés en moins de 2 minutes"
+label = "{{value}} des verrouillages navigateur contournés en moins de 2 minutes"
 
 [stats.students]
-label = "des étudiants connaissent au moins une méthode de contournement"
+label = "{{value}} des étudiants connaissent au moins une méthode de contournement"
 
 [stats.dom_extract]
-label = "pour extraire les réponses via l'inspection DOM sur les principales plateformes"
+label = "{{value}} pour extraire les réponses via l'inspection DOM sur les principales plateformes"
 
 [stats.zero_controls]
-label = "contrôles côté client qui résistent à un utilisateur déterminé"
+label = "{{value}} contrôles côté client qui résistent à un utilisateur déterminé"
 
 [download]
 title = "Cadre d'Évaluation Papier-First"
