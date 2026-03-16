@@ -47,7 +47,7 @@ const StatsSection = () => {
               {valueMap[key]}
             </div>
             <p className="font-serif text-sm text-muted-foreground leading-relaxed">
-              {t(`stats.${key}.label`)}
+              {t(`stats.${key}.label`, { value: valueMap[key] })}
             </p>
           </div>
         ))}
