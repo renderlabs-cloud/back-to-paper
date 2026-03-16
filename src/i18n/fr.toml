@@ -80,11 +80,20 @@ label = "pour extraire les réponses via l'inspection DOM sur les principales pl
 [stats.zero_controls]
 label = "contrôles côté client qui résistent à un utilisateur déterminé"
 
-[download]
-title = "Cadre d'Évaluation Papier-First"
-subtitle = "Un guide pratique pour la transition vers une évaluation inviolable."
-cta = "S'ENGAGER POUR LE PAPIER"
-note = "PDF // 2.4Mo // CC BY-SA 4.0"
+[petition]
+title = "Signer la Pétition"
+subtitle = "Soutenez des évaluations non numériques et logiques qui exigent la pensée critique — pas la régurgitation."
+nameLabel = "Nom"
+namePlaceholder = "Votre nom complet"
+emailLabel = "E-mail"
+emailPlaceholder = "vous@exemple.com"
+roleLabel = "Rôle (facultatif)"
+rolePlaceholder = "ex. Étudiant, Enseignant, Administrateur"
+cta = "SIGNER LA PÉTITION"
+signatureCount = "signatures et ça continue"
+thankYou = "Merci."
+thankYouSub = "Votre voix a été ajoutée. Le papier perdure."
+error = "Une erreur s'est produite. Veuillez réessayer."
 
 [footer]
 line1 = "Back to Paper — Un projet de plaidoyer ouvert."

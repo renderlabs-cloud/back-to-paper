@@ -14,6 +14,30 @@ export type Database = {
   }
   public: {
     Tables: {
+      petition_signatures: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          name: string
+          role: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          role?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          role?: string | null
+        }
+        Relationships: []
+      }
       stats: {
         Row: {
           created_at: string

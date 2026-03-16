@@ -3,7 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import ExploitGallery from '@/components/ExploitGallery';
 import StatsSection from '@/components/StatsSection';
 import ManifestoSection from '@/components/ManifestoSection';
-import DownloadSection from '@/components/DownloadSection';
+import PetitionSection from '@/components/PetitionSection';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 
@@ -37,7 +37,7 @@ const Index = () => (
         <ManifestoSection />
       </ScrollReveal>
       <ScrollReveal direction="right">
-        <DownloadSection />
+        <PetitionSection />
       </ScrollReveal>
     </main>
     <Footer />
