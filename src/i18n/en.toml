@@ -69,16 +69,16 @@ points = [
 title = "The Numbers"
 
 [stats.lockdown]
-label = "{{value}} of browser lockdowns bypassed in under 2 minutes"
+label = "of browser lockdowns bypassed in under 2 minutes"
 
 [stats.students]
-label = "{{value}} of students report knowing at least one bypass method"
+label = "of students report knowing at least one bypass method"
 
 [stats.dom_extract]
-label = "{{value}} to extract answers via DOM inspection on major platforms"
+label = "to extract answers via DOM inspection on major platforms"
 
 [stats.zero_controls]
-label = "{{value}} client-side controls that survive a determined user"
+label = "client-side controls that survive a determined user"
 
 [download]
 title = "Paper-First Assessment Framework"
