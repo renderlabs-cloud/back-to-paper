@@ -37,7 +37,7 @@ const Index = () => (
         <ManifestoSection />
       </ScrollReveal>
       <ScrollReveal direction="right">
-        <DownloadSection />
+        <PetitionSection />
       </ScrollReveal>
     </main>
     <Footer />

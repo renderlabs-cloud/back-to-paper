@@ -80,11 +80,20 @@ label = "to extract answers via DOM inspection on major platforms"
 [stats.zero_controls]
 label = "client-side controls that survive a determined user"
 
-[download]
-title = "Paper-First Assessment Framework"
-subtitle = "A practical guide for transitioning to tamper-proof assessment."
-cta = "COMMIT TO PAPER"
-note = "PDF // 2.4MB // CC BY-SA 4.0"
+[petition]
+title = "Sign the Petition"
+subtitle = "Stand for non-digital, logical assessments that require critical thinking — not regurgitation."
+nameLabel = "Name"
+namePlaceholder = "Your full name"
+emailLabel = "Email"
+emailPlaceholder = "you@example.com"
+roleLabel = "Role (optional)"
+rolePlaceholder = "e.g. Student, Teacher, Administrator"
+cta = "SIGN THE PETITION"
+signatureCount = "signatures and counting"
+thankYou = "Thank you."
+thankYouSub = "Your voice has been added. The paper endures."
+error = "Something went wrong. Please try again."
 
 [footer]
 line1 = "Back to Paper — An open advocacy project."
