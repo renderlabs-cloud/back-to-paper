@@ -46,7 +46,7 @@ const StatsSection = () => {
             <div className="font-mono text-5xl md:text-6xl font-bold text-primary mb-4 tracking-tighter">
               {valueMap[key]}
             </div>
-            <p className="font-serif text-sm text-muted-foreground leading-relaxed">
+            <p className="font-serif text-sm text-muted-foreground leading-relaxed" flicker={key == "zero_controls"}>
               {t(`stats.${key}.label`)}
             </p>
           </div>
