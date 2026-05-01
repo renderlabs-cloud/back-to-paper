@@ -96,4 +96,18 @@
   button {
     border-radius: 0 !important;
   }
+
+  [flicker=true] {
+    animation: flicker 2s infinite;
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+  }
+  
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      opacity: 1;
+    }
+    20%, 24%, 55% {
+      opacity: 0.4;
+    }
+  }
 }
